@@ -87,6 +87,156 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* GENERAL STYLES */
+@font-face {
+  font-family: Jester;
+  src: url('../fonts/Jester.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Jester;
+  src: url('../fonts/Jester.woff') format('woff');
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #1b1a1b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  color: #001f75;
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+/*----------BASE HEADER & FOOTER STYLES----------*/
+header {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.hero-area {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+header .content-wrapper .cg-logo {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 20px 40px 0;
+  width: 80%;
+}
+
+header .content-wrapper .cg-logo figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header .content-wrapper .fc-logo {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 40px;
+  width: 70%;
+}
+
+header .content-wrapper .fc-logo figure {
+  margin-top: 0;
+  width: 55%;
+}
+
+header nav {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1.125em;
+  font-weight: 700;
+  justify-content: center;
+  text-transform: lowercase;
+  width: 60%;
+}
+
+header nav ul {
+  width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+header nav ul li a {
+  align-content: center;
+  display: flex;
+  justify-items: center;
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+/*====================
+  MOBILE STYLES HERE
+=====================*/
+/*----------Header-Footer----------*/
+
+/*----------Home Page----------*/
+
+/*----------Past Projects Page----------*/
+
+/*----------Employment Page----------*/
+
+/*-----------Contact Page-----------*/
+
+/*----------Privacy Policy----------*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -174,6 +324,19 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 768px) {
+  /*====================
+    TABLET STYLES HERE
+  =====================*/
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*====================
+    DESKTOP STYLES HERE
+  =====================*/
+
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

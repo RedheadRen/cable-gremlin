@@ -19,6 +19,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome CDN version 5.5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -26,13 +32,17 @@
 
   <!-- Add your site or application content here -->
     <header>
-        <section class="hero-area">
-            <figure>
-                <a href="index.html"> <img src="img/cable-gremlin-logo.png"  alt="cable-gremlin-logo"/></a>
-            </figure>
-            <figure>
-                <a href="index.html"><img scr="img/fangsrud-construction-logo.png" alt="fangsrud-construction-logo"/></a>
-            </figure>
+        <section class="content-wrapper">
+            <div class="cg-logo">
+                <figure>
+                    <a href="index.html"> <img src="img/cable-gremlin-logo.png"  alt="cable-gremlin-logo"/></a>
+                </figure>
+            </div>
+            <div class="fc-logo">
+                <figure>
+                    <a href="index.html"> <img src="img/fangsrud-construction-logo.png" alt="fangsrud-construction-logo"/></a>
+                </figure>
+            </div> 
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -56,7 +66,7 @@
 
     <footer>
         <h2>Contact</h2>
-            <a href="mailto:derek@cablegremlin.com"><img src="img/envelope.png" id="envelope" alt="Envelope icon" /></a>
+            <p class="fontawesome-icon"><i class="fas fa-envelope"></i></p>
             <a href="mailto:derek@cablegremlin.com">derek@cablegremlin.com</a>
         <h4>Copyright Cable Gremlin Inc. 2020</h4>
         <a href="privacy-policy/index.html" target="_blank">Privacy Policy</a>
