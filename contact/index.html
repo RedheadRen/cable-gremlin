@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CGI | Past Projects</title>
+  <title>CGI | Contact Us</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -45,18 +45,42 @@
                 <ul>
                     <li><a href="../index.html">About</a></li>
                     <li><a href="../past-projects/index.html">Past Projects</a></li>
-                    <li><a href="#employment">Employment</a></li>
-                    <li><a href="../contact/index.html">Contact</a></li>
+                    <li><a href="../employment/index.html">Employment</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="contact">
-                <h2>Contact Us</h2>
-                <h3>Title for Contact section</h3>
-                <!--PUT CONTACT FORM HERE-->
-            </section>
+            <div class="contact-title">
+                <h2>Get in Touch</h2>
+                <h3>Drop Us a Line Here</h3>
+            </div>
+
+        <!--PUT CONTACT FORM HERE-->
+            <div class="contact">
+                <form id="contact-form" method="post" action="contact-form-handler.php">
+                    <div class="name">
+                        <input type="text" placeholder="My name is" name="name" id="name-input" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="My e-mail is" name="email" id="email-input" required>
+                    </div>
+                    <div class="subject">
+                        <select placeholder="Subject line" name="subject" id="subject-input" required>
+                            <option disabled hidden selected>Subject line</option>
+                            <option>Employment Application</option>
+                            <option>I'd Like to Hire You</option>
+                        </select>
+                    </div>
+                    <div class="message">
+                        <textarea name="message" placeholder="Message" id="message-input" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="SEND MESSAGE" id="form-button" />
+                    </div>
+                </form><!-- // End form -->
+            </div>
         </main>
         
         <footer>

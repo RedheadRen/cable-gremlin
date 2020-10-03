@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>contact form design</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+    <div class="contact-title">
+        <h1>Say Hello</h1>
+        <h2>We are always ready to serve you</h2>
+    </div>
+
+    <div class="contact">
+        <form id="contact-form" method="post" action="contact-form-handler.php">
+            <div class="name">
+              <input type="text" placeholder="My name is" name="name" id="name-input" required>
+            </div>
+            <div class="email">
+              <input type="email" placeholder="My e-mail is" name="email" id="email-input" required>
+            </div>
+            <div class="subject">
+              <select placeholder="Subject line" name="subject" id="subject-input" required>
+                <option disabled hidden selected>Subject line</option>
+                <option>Employment Application</option>
+                <option>I'd Like to Hire You</option>
+              </select>
+            </div>
+            <div class="message">
+              <textarea name="message" placeholder="Message" id="message-input" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Send Message" id="form-button" />
+            </div>
+          </form><!-- // End form -->
+    </div>
+</body>
+</html>
+
+

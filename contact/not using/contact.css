@@ -1,0 +1,122 @@
+body {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 0, 50, .05)), url(lean-the-bucket.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: san-serif;
+    width: 100%;
+}
+
+.contact-title {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 50px;
+    color: black;
+    text-transform: uppercase;
+    transition: all 3s ease-in-out;
+    width: 90%
+}
+
+.contact-title h1 {
+    font-size: 32px;
+    line-height: 10px;
+}
+
+.contact-title h2 {
+    font-size: 16px;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: black;
+    margin-top: 50px;
+    transition: all 3s ease-in-out;
+    width: 80%;
+}
+
+.name,
+.email,
+.subject,
+.message,
+.submit {
+    background: transparent;
+    border: none;
+    outline: none;
+    color:black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+input,
+select {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100px;
+}
+
+input[type='text'], 
+[type='email'], 
+select, 
+textarea[name="message"] {
+    background: none;
+    border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+    font-weight: 400;
+	margin: 0em 0 1.875em 0;
+	padding: 0;
+    text-transform: uppercase;
+	width: 100%;
+}
+
+input[placeholder=""]{
+    color: #474544;
+}
+    
+#form-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#form-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+} 

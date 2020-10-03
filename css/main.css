@@ -291,9 +291,10 @@ main {
   justify-content: center;
   width: 90%;
 }
- .about h2 {
+
+.about h2 {
    margin: 0;
- }
+}
 
 /*----------Past Projects Page----------*/
 .past-projects {
@@ -301,11 +302,12 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  text-align: center;
   width: 90%;
 }
- .past-projects h2 {
+.past-projects h2 {
    margin: 0;
- }
+}
 
 /*----------Employment Page----------*/
 .employment {
@@ -315,19 +317,120 @@ main {
   justify-content: center;
   width: 90%;
 }
- .employment h2 {
+.employment h2 {
    margin: 0;
  }
 
- .employment p {
+.employment p {
    text-align: center;
  }
 
- .employment i {
+.employment i {
    font-size: 1.5em;
  }
-/*-----------Contact Page-----------*/
 
+/*-----------Contact Page-----------*/
+.contact-title {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+.contact-title h2 {
+  margin: 0;
+}
+
+.contact {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #1b1a1b;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.name,
+.email,
+.subject,
+.message,
+.submit {
+  background: transparent;
+  border: none;
+  outline: none;
+  color:#1b1a1b;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 100%;
+}
+
+option {
+  font-size: .65em;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 100px;
+}
+
+input[type='text'], 
+[type='email'], 
+select, 
+textarea[name="message"] {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0em 0 1.875em 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+input[placeholder=""]{
+  color: #474544;
+}
+  
+#form-button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #001f75;
+  border-color: transparent;
+  color: #f7f6f9;
+  font-size: 1.25em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#form-button:hover {
+  background-color: #1b1a1b;
+  cursor: pointer;
+} 
 /*----------Privacy Policy----------*/
 
 /* ==========================================================================
@@ -421,8 +524,105 @@ main {
   /*====================
     TABLET STYLES HERE
   =====================*/
-  /*----------Header-Footer----------*/
+  /*----------Header-Footer----------*/ 
+  header {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  } 
 
+  header .cg-logo {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 60%;
+  }
+  
+  header .cg-logo figure {
+    padding: 0;
+    width: 100%;
+  }
+  
+  header .fc-logo {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 30%;
+  }
+  
+  header .fc-logo figure {
+    margin: 0;
+    width: 100%;
+  }
+  
+  header nav {
+    margin: 10px 0 0 400px;
+    width: 30%;
+  }
+  
+  header nav ul {
+    padding: 0;
+    width: 100%;
+  }
+  
+  header h1 {
+    width: 100%;
+  }
+
+  footer {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  footer .contact {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 80%;
+  }
+  
+  footer h2 {
+    margin-bottom: 0;
+  }
+  
+  footer .contact i {
+    font-size: 3em;
+    line-height: 2;
+    width: 100%;
+  }
+  
+  footer .contact p {
+    margin-bottom: 5px;
+  }
+  
+  footer .contact a {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-right: 50px;
+    width: 90%;
+  }
+  
+  footer .copyright {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  footer h4 {
+    font-size: .875em;
+    margin-left: 20px;
+    width: 78%;
+  }
+  
+  footer p {
+    font-size: .875em;
+  }
+  
   /*----------Home Page----------*/
 
   /*----------Past Projects Page----------*/
