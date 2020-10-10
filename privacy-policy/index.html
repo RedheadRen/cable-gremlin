@@ -29,42 +29,48 @@
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-    <header>
-        <section class="hero-area">
-            <figure>
-                <a href="../index.html"> <img src="../img/cable-gremlin-logo.png"  alt="cable-gremlin-logo"/></a>
-            </figure>
-            <figure>
-                <a href="../index.html"><img scr="../img/fangsrud-construction-logo.png" alt="fangsrud-construction-logo"/></a>
-            </figure>
+    <section class="container">
+        <header>
             <nav>
-                <ul>
-                    <li><a href="../index.html">About</a></li>
+                <div class="logo">
+                    <figure>
+                        <a href="../index.html"> <img src="../img/logo.png"  alt="cable-gremlin-logo"/></a>
+                    </figure>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../about/index.html">About</a></li>
                     <li><a href="../past-projects/index.html">Past Projects</a></li>
                     <li><a href="../employment/index.html">Employment</a></li>
-                    <li><a href="../contact.index.html">Contact</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
             </nav>
-        </section>
-    </header>
+        </header>
 
-    <main>
-        <section class="privacy-policy">
-            <h2>Privacy Policy</h2>
-            <h3>Title for Privacy Policy section</h3>
-            <p><!--PUT PRIVACY POLICY INFO HERE--></p>
-        </section>
-    </main>
+        <main>
+            <section class="privacy-policy">
+                <h2>Privacy Policy</h2>
+                <h3>Title for Privacy Policy section</h3>
+                <p><!--PUT PRIVACY POLICY INFO HERE--></p>
+            </section>
+        </main>
 
-    <footer>
-        <h2>Contact</h2>
-            <a href="mailto:derek@cablegremlin.com"><img src="../img/envelope.png" id="envelope" alt="Envelope icon" /></a>
-            <a href="mailto:derek@cablegremlin.com">derek@cablegremlin.com</a>
-        <h4>Copyright Cable Gremlin Inc. 2020</h4>
-        <a href="#privacy-policy">Privacy Policy</a>
-    </footer>
+        <footer>
+            <h2>Contact</h2>
+            <div class="contact">
+                <p class="fontawesome-icon"><i class="fas fa-envelope"></i></p>
+                <a href="mailto:derek@cablegremlin.com">derek@cablegremlin.com</a>
+            </div>
+            <div class="copyright">
+                <h4>Copyright Cable Gremlin Inc. 2020</h4>
+                <p><a href="#privacy-policy" target="_blank">Privacy Policy</a></p>
+            </div> 
+        </footer>
+    </section>
 
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="../js/plugins.js"></script>
