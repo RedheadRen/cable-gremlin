@@ -389,6 +389,11 @@ main {
   width: 90%;
 }
 
+.about img {
+  border: 2px inset #001f75;
+  border-radius: 30px;
+}
+
 /*----------Past Projects Page----------*/
 .past-projects {
   align-items: center;
