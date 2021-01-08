@@ -256,6 +256,7 @@ nav .logo figure {
 
 .bg-cover {
   background-color: #f7f6f9;
+  border: solid 1px #001f75;
   border-radius: 50%;
   height: 45px;
   position: fixed;
