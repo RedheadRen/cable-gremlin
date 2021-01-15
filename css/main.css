@@ -88,6 +88,7 @@ textarea {
    ========================================================================== */
 
 /* GENERAL STYLES */
+
 @font-face {
   font-family: Jester;
   src: url('../fonts/Jester.otf') format('opentype');
@@ -121,8 +122,12 @@ body {
   width: 100%;
 }
 
+figure img {
+  width: 25%;
+}
+
 img {
-  width: 100%;
+  width: 90%;
 }
 
 ul {
@@ -312,7 +317,7 @@ nav .logo figure {
 }
 
 h1 {
-  margin: 70px 0 50px 25px;
+  margin: 20px 0 50px 75px;
 }
 
 footer {
@@ -387,6 +392,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 200px;
   width: 90%;
 }
 
