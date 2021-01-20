@@ -385,6 +385,7 @@ main {
   flex-flow: row wrap;
   justify-content: center;
   margin: 50px 0;
+  padding: 0
 }
 
 .about {
@@ -669,21 +670,6 @@ input[placeholder=""]{
     width: 100%;
   }
 
-  .hamburger-menu {
-    height: 75px;
-    right: 60px;
-    top: 60px;
-    width: 75px;
-  }
-
-  .bg-cover {
-    border-radius: 50%;
-    height: 75px;
-    right: 60px;
-    top: 60px;
-    width: 75px;
-  }
-
   .nav-link {
     font-size: 1.75em;
     font-weight: 600;
@@ -837,7 +823,10 @@ input[placeholder=""]{
     font-size: 1.25;
   }
   /*----------Home Page----------*/
-  
+  h1 {
+    margin-top: 100px;
+    margin-left: 
+  }
   /*----------Past Projects Page----------*/
 
   /*----------Employment Page----------*/
