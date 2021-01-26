@@ -183,7 +183,6 @@ p {
 header {
   background: url('../img/guys-in-buckets.jpg') fixed center no-repeat;
   background-size: cover;
-  height: 50vh;
   width: 100%;
 }
 
@@ -197,14 +196,14 @@ nav {
   width: 100%;
 }
 
-nav .logo {
+nav .logo,
+nav .logo-main {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: left;
   margin-left: 20px;
-  margin-top: 40px;
-  width: 55%;
+  margin-top: 35px;
 }
 
 nav .logo figure {
@@ -316,15 +315,14 @@ nav .logo figure {
   letter-spacing: 0.8rem;
 }
 
-h1 {
-  margin: 70px 0 50px 25px;
-}
-
 footer {
   align-items: center;
+  border-top: #001f75 solid 2px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding-top: 50px;
+  width: 100%
 }
 
 footer .contact {
@@ -333,7 +331,7 @@ footer .contact {
   flex-direction: column;
   justify-content: center;
   margin: 0 0 20px 0;
-  padding: 0;
+  padding: 15px 0 0 0;
   width: 90%;
 }
 
@@ -379,13 +377,25 @@ footer .copyright p {
 }
 
 /*----------Home Page----------*/
+header .header-main {
+  height: 50vh;
+}
+
+nav .logo-main {
+  width: 55%;
+}
+
 main {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 50px 0;
+  margin: 25px 0;
   padding: 0
+}
+
+h1 {
+  margin: 70px 0 50px 75px;
 }
 
 .about {
@@ -393,16 +403,25 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 25px;
   width: 90%;
 }
 
 .about img {
   border: 2px inset #001f75;
   border-radius: 30px;
+  margin: 20px;
 }
 
 /*----------Past Projects Page----------*/
+.header-pages {
+  height: 35vh;
+}
+
+nav .logo {
+  width: 75%;
+}
+
 .past-projects {
   align-items: center;
   display: flex;
@@ -410,6 +429,16 @@ main {
   justify-content: center;
   text-align: center;
   width: 90%;
+}
+
+.past-project-imgs {
+  padding: 20px;
+}
+
+.past-projects img {
+  border: 2px inset #001f75;
+  border-radius: 30px;
+  margin-top: 20px;
 }
 
 /*----------Employment Page----------*/
@@ -667,7 +696,7 @@ input[placeholder=""]{
   h1 {
     margin-top: 0;
     text-align: center;
-    width: 100%;
+    width: 75%;
   }
 
   .nav-link {
@@ -823,11 +852,32 @@ input[placeholder=""]{
     font-size: 1.25;
   }
   /*----------Home Page----------*/
-  h1 {
-    margin-top: 100px;
-    margin-left: 
-  }
+
   /*----------Past Projects Page----------*/
+  .past-projects {
+    width: 95%;
+  }
+  
+  .past-project-imgs article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .past-project-imgs figure {
+    width: 68%;
+  }
+
+  .past-project-imgs .project-description {
+    margin-right: 15px;
+    margin-top: 20px;
+    width: 30%;
+  }
+
+  .project-descrition p {
+    margin-top: 20px;
+    padding: 50px;
+    text-align: left;
+  }
 
   /*----------Employment Page----------*/
 
