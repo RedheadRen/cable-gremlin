@@ -111,11 +111,9 @@ body {
   flex-flow: row wrap;
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
+  height: 100vh;
   justify-content: center;
-  /*margin: 0;
   overflow-x: hidden;
-  padding: 0;
-  height: 100vh;*/
 }
 
 .container {
@@ -181,9 +179,17 @@ p {
 }
 
 header {
-  background: url('../img/guys-in-buckets.jpg') fixed center no-repeat;
+  background: url('../img/lineman-in-bucket.png') fixed center no-repeat;
   background-size: cover;
   width: 100%;
+}
+
+.header-main {
+  height: 50vh;
+}
+
+.header-pages {
+  height: 35vh;
 }
 
 nav {
@@ -377,10 +383,6 @@ footer .copyright p {
 }
 
 /*----------Home Page----------*/
-header .header-main {
-  height: 50vh;
-}
-
 nav .logo-main {
   width: 55%;
 }
@@ -403,7 +405,7 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 2px;
   width: 90%;
 }
 
@@ -411,18 +413,15 @@ h1 {
   border: 2px inset #001f75;
   border-radius: 30px;
   margin: 20px;
+  width: 80%;
 }
 
-/*----------Past Projects Page----------*/
-.header-pages {
-  height: 35vh;
-}
-
+/*----------Work Page----------*/
 nav .logo {
   width: 75%;
 }
 
-.past-projects {
+.work {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
@@ -431,11 +430,11 @@ nav .logo {
   width: 90%;
 }
 
-.past-project-imgs {
+.work-div {
   padding: 20px;
 }
 
-.past-projects img {
+.work img {
   border: 2px inset #001f75;
   border-radius: 30px;
   margin-top: 20px;
@@ -450,9 +449,25 @@ nav .logo {
   width: 90%;
 }
 
+.employment h3 {
+  font-size: 2.5em;
+}
+
 .employment p {
   margin-top: 10px;
   text-align: center;
+}
+
+.employment-application {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.employment-application figure img {
+  margin: 10px 70px;
 }
 
 .employment i {
@@ -461,7 +476,8 @@ nav .logo {
   margin: 10px;
 }
 
-.download {
+.download p {
+  font-size: 1em;
   width: 80%;
 }
 
@@ -662,10 +678,6 @@ input[placeholder=""]{
     TABLET STYLES HERE
   =====================*/
   /*----------General Styles---------*/
-  body {
-    overflow-x: hidden;
-  }
-
   h1 {
     font-size: 3em;
   }
@@ -679,7 +691,7 @@ input[placeholder=""]{
   }
   
   p {
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin: 10px 0 20px 0;
   }
   
@@ -701,7 +713,6 @@ input[placeholder=""]{
 
   .nav-link {
     font-size: 1.75em;
-    font-weight: 600;
     line-height: 2;
   }
   
@@ -739,21 +750,10 @@ input[placeholder=""]{
   
   /*----------Home Page----------*/  
   
-  /*----------Past Projects Page----------*/
+  /*----------Work Page----------*/
 
-  /*----------Employment Page----------*/  
-  .employment p {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .employment i {
-    display: flex;
-    font-size: 1.5em;
-    margin: 10px;
-  }
-
-  .employment figure {
+  /*----------Employment Page----------*/    
+  .employment-application figure {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -761,8 +761,16 @@ input[placeholder=""]{
     width: 100%;
   }
 
-  .download {
-     width: 80%;
+  .employment i {
+    display: flex;
+  }
+
+  .packet {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
   }
 
   /*-----------Contact Page-----------*/
@@ -800,12 +808,11 @@ input[placeholder=""]{
   
   p {
     font-size: 1.5em;
-    margin: 10px 0 20px 0;
   }
   
   /*----------Header-Footer----------*/
-  header {
-    height: 75vh;
+  .header-main {
+    height: 65vh;
   }
 
   nav .logo {
@@ -817,16 +824,8 @@ input[placeholder=""]{
     width: 60%;
   }
 
-  .hamburger-menu {
-    cursor: pointer;
-  }
-
   footer .contact i {
     font-size: 2.5em;
-  }
-
-  footer .contact a {
-    font-size: 2em;
   }
 
   footer .copyright {
@@ -853,27 +852,27 @@ input[placeholder=""]{
   }
   /*----------Home Page----------*/
 
-  /*----------Past Projects Page----------*/
-  .past-projects {
+  /*----------Work Page----------*/
+  .work {
     width: 95%;
   }
   
-  .past-project-imgs article {
+  .work-div article {
     display: flex;
     justify-content: space-between;
   }
 
-  .past-project-imgs figure {
+  .work-div figure {
     width: 68%;
   }
 
-  .past-project-imgs .project-description {
+  .work-description {
     margin-right: 15px;
     margin-top: 20px;
     width: 30%;
   }
 
-  .project-descrition p {
+  .work-descrition p {
     margin-top: 20px;
     padding: 50px;
     text-align: left;
