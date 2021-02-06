@@ -502,7 +502,7 @@ main {
   margin: 10px 70px;
 }
 
-.employment i {
+.employment-application .packet i {
   display: none;
   font-size: 1.5em;
   margin: 10px;
@@ -783,15 +783,7 @@ input[placeholder=""]{
   /*----------Work Page----------*/
 
   /*----------Employment Page----------*/  
-  .employment-application figure {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .employment i {
+  .employment-application .packet i {
     display: flex;
   }
 
@@ -800,7 +792,17 @@ input[placeholder=""]{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 80%;
+    width: 50%;
+  }
+
+  .packet p {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .packet .fontawesome-icon {
+    width: 10%;
   }
 
   /*-----------Contact Page-----------*/
@@ -917,29 +919,10 @@ input[placeholder=""]{
   }
 
   /*----------Employment Page----------*/
-  .emplopyment {
+  .employment h3 {
     width: 75%;
   }
 
-  .employment-application figure {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .employment i {
-    display: flex;
-  }
-
-  .packet {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 80%;
-  }
   /*-----------Contact Page-----------*/
 
   /*----------Privacy Policy----------*/
